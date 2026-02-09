@@ -1,0 +1,95 @@
+@model MovInventario.Application.Models.MovInventario
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Editar Movimiento";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0">Editar Movimiento</h5>
+            </div>
+
+            <div class="card-body">
+                <form asp-action="Edit">
+
+                    <!-- Fila 1 (clave - solo lectura) -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Cod. Compañía</label>
+                            <input type="hidden" name="CodCia" value="@Model.CodCia" />
+                            <select asp-for="CodCia" asp-items="@ViewBag.Companias" class="form-select" disabled></select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Compañía Venta</label>
+                            <input type="hidden" name="CompaniaVenta3" value="@Model.CompaniaVenta3" />
+                            <select asp-for="CompaniaVenta3" asp-items="@ViewBag.CompaniasVenta" class="form-select" disabled></select>
+                        </div>
+                    </div>
+
+                    <!-- Fila 2 (clave - solo lectura) -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Almacén Venta</label>
+                            <input type="hidden" name="AlmacenVenta" value="@Model.AlmacenVenta" />
+                            <select asp-for="AlmacenVenta" asp-items="@ViewBag.Almacenes" class="form-select" disabled></select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Tipo Movimiento</label>
+                            <input type="hidden" name="TipoMovimiento" value="@Model.TipoMovimiento" />
+                            <select asp-for="TipoMovimiento" asp-items="@ViewBag.TiposMovimiento" class="form-select" disabled></select>
+                        </div>
+                    </div>
+
+                    <!-- Fila 3 (clave - solo lectura) -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Tipo Documento</label>
+                            <input type="hidden" name="TipoDocumento" value="@Model.TipoDocumento" />
+                            <select asp-for="TipoDocumento" asp-items="@ViewBag.TiposDocumento" class="form-select" disabled></select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Nro Documento</label>
+                            <input asp-for="NroDocumento" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <!-- Fila 4 -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Cod. Item</label>
+                            <input type="hidden" name="CodItem2" value="@Model.CodItem2" />
+                            <select asp-for="CodItem2" asp-items="@ViewBag.Items" class="form-select" disabled></select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Cantidad</label>
+                            <input asp-for="Cantidad" type="number" min="1" class="form-control" />
+                            <span asp-validation-for="Cantidad" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Fecha (solo lectura) -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Fecha Transacción</label>
+                            <input asp-for="FechaTransaccion" type="date" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="d-flex justify-content-end gap-2">
+                        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                        <button type="submit" class="btn btn-warning">Actualizar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

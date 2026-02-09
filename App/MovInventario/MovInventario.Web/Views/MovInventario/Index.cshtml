@@ -1,0 +1,132 @@
+@model IEnumerable<MovInventario.Application.Models.MovInventario>
+@using static MovInventario.Application.Models.Catalogos
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Movimientos de Inventario";
+}
+
+<h2 class="mb-4">Movimientos de Inventario</h2>
+
+<!-- Filtros -->
+<div class="card shadow-sm mb-4">
+    <div class="card-body">
+        <form method="get" asp-action="Index">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-3">
+                    <label class="form-label">Fecha Inicio</label>
+                    <input type="date" name="fechaInicio" class="form-control"
+                           value="@Context.Request.Query["fechaInicio"]" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Fecha Fin</label>
+                    <input type="date" name="fechaFin" class="form-control"
+                           value="@Context.Request.Query["fechaFin"]" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Tipo Movimiento</label>
+                    <select name="tipoMovimiento" class="form-select">
+                        <option value="">Todos</option>
+                        @foreach (var tipo in TiposMovimiento)
+                        {
+                            <option value="@tipo.Key"
+                                    selected="@(Context.Request.Query["tipoMovimiento"] == tipo.Key ? "selected" : null)">
+                                @tipo.Value
+                            </option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Nro Documento</label>
+                    <input type="text" name="nroDocumento" class="form-control"
+                           value="@Context.Request.Query["nroDocumento"]" />
+                </div>
+            </div>
+            <div class="row g-3 align-items-end mt-1">
+                <div class="col-md-3">
+                    <label class="form-label">Item</label>
+                    <select name="codItem2" class="form-select">
+                        <option value="">Todos</option>
+                        @foreach (var item in Items)
+                        {
+                            <option value="@item.Key"
+                                    selected="@(Context.Request.Query["codItem2"] == item.Key ? "selected" : null)">
+                                @item.Value
+                            </option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary w-100">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Botón Nuevo -->
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-success">+ Nuevo Movimiento</a>
+</div>
+
+<!-- Tabla -->
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Tipo Mov.</th>
+                <th>Tipo Doc.</th>
+                <th>Nro Documento</th>
+                <th>Item</th>
+                <th>Cantidad</th>
+                <th>Fecha</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@TiposMovimiento.GetValueOrDefault(item.TipoMovimiento, item.TipoMovimiento)</td>
+                    <td>@TiposDocumento.GetValueOrDefault(item.TipoDocumento!, item.TipoDocumento!)</td>
+                    <td>@item.NroDocumento</td>
+                    <td>@Items.GetValueOrDefault(item.CodItem2, item.CodItem2)</td>
+                    <td>@item.Cantidad</td>
+                    <td>@item.FechaTransaccion?.ToString("dd/MM/yyyy")</td>
+                    <td class="text-center">
+                        <a asp-action="Edit"
+                           asp-route-codCia="@item.CodCia"
+                           asp-route-companiaVenta3="@item.CompaniaVenta3"
+                           asp-route-almacenVenta="@item.AlmacenVenta"
+                           asp-route-tipoMovimiento="@item.TipoMovimiento"
+                           asp-route-tipoDocumento="@item.TipoDocumento"
+                           asp-route-nroDocumento="@item.NroDocumento"
+                           asp-route-codItem2="@item.CodItem2"
+                           class="btn btn-sm btn-outline-warning me-1">
+                            Editar
+                        </a>
+
+                        <form asp-action="Delete" method="post" class="d-inline"
+                              onsubmit="return confirm('¿Eliminar este movimiento?');">
+                            <input type="hidden" name="CodCia" value="@item.CodCia" />
+                            <input type="hidden" name="CompaniaVenta3" value="@item.CompaniaVenta3" />
+                            <input type="hidden" name="AlmacenVenta" value="@item.AlmacenVenta" />
+                            <input type="hidden" name="TipoMovimiento" value="@item.TipoMovimiento" />
+                            <input type="hidden" name="TipoDocumento" value="@item.TipoDocumento" />
+                            <input type="hidden" name="NroDocumento" value="@item.NroDocumento" />
+                            <input type="hidden" name="CodItem2" value="@item.CodItem2" />
+                            <button type="submit" class="btn btn-sm btn-outline-danger">
+                                Eliminar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info text-center">No se encontraron movimientos.</div>
+}

@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|d:\\educacion\\backend .net especializacion\\prueba_tecnica\\app\\movinventario\\movinventario.web\\views\\movinventario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|solutionrelative:movinventario.web\\views\\movinventario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|d:\\educacion\\backend .net especializacion\\prueba_tecnica\\app\\movinventario\\movinventario.web\\views\\movinventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|solutionrelative:movinventario.web\\views\\movinventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CABBA4B-AFB9-4D7E-AB17-881E1D989CE6}|MovInventario.Infrastructure\\MovInventario.Infrastructure.csproj|d:\\educacion\\backend .net especializacion\\prueba_tecnica\\app\\movinventario\\movinventario.infrastructure\\repositories\\movinventariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CABBA4B-AFB9-4D7E-AB17-881E1D989CE6}|MovInventario.Infrastructure\\MovInventario.Infrastructure.csproj|solutionrelative:movinventario.infrastructure\\repositories\\movinventariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|d:\\educacion\\backend .net especializacion\\prueba_tecnica\\app\\movinventario\\movinventario.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|solutionrelative:movinventario.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|d:\\educacion\\backend .net especializacion\\prueba_tecnica\\app\\movinventario\\movinventario.web\\controllers\\movinventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D0903E8-D7DD-4267-999B-6C24CC15D8C1}|MovInventario.Web\\MovInventario.Web.csproj|solutionrelative:movinventario.web\\controllers\\movinventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CABBA4B-AFB9-4D7E-AB17-881E1D989CE6}|MovInventario.Infrastructure\\MovInventario.Infrastructure.csproj|d:\\educacion\\backend .net especializacion\\prueba_tecnica\\app\\movinventario\\movinventario.infrastructure\\db\\movinventariodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CABBA4B-AFB9-4D7E-AB17-881E1D989CE6}|MovInventario.Infrastructure\\MovInventario.Infrastructure.csproj|solutionrelative:movinventario.infrastructure\\db\\movinventariodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 368,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Views\\MovInventario\\Create.cshtml",
+              "RelativeDocumentMoniker": "MovInventario.Web\\Views\\MovInventario\\Create.cshtml",
+              "ToolTip": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Views\\MovInventario\\Create.cshtml",
+              "RelativeToolTip": "MovInventario.Web\\Views\\MovInventario\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwD4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T23:49:16.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Views\\MovInventario\\Index.cshtml",
+              "RelativeDocumentMoniker": "MovInventario.Web\\Views\\MovInventario\\Index.cshtml",
+              "ToolTip": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Views\\MovInventario\\Index.cshtml",
+              "RelativeToolTip": "MovInventario.Web\\Views\\MovInventario\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-07T02:16:59.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovInventarioRepository.cs",
+              "DocumentMoniker": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Infrastructure\\Repositories\\MovInventarioRepository.cs",
+              "RelativeDocumentMoniker": "MovInventario.Infrastructure\\Repositories\\MovInventarioRepository.cs",
+              "ToolTip": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Infrastructure\\Repositories\\MovInventarioRepository.cs",
+              "RelativeToolTip": "MovInventario.Infrastructure\\Repositories\\MovInventarioRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwDAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T02:08:53.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MovInventarioDb.cs",
+              "DocumentMoniker": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Infrastructure\\Db\\MovInventarioDb.cs",
+              "RelativeDocumentMoniker": "MovInventario.Infrastructure\\Db\\MovInventarioDb.cs",
+              "ToolTip": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Infrastructure\\Db\\MovInventarioDb.cs",
+              "RelativeToolTip": "MovInventario.Infrastructure\\Db\\MovInventarioDb.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T02:10:35.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovInventarioController.cs",
+              "DocumentMoniker": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Controllers\\MovInventarioController.cs",
+              "RelativeDocumentMoniker": "MovInventario.Web\\Controllers\\MovInventarioController.cs",
+              "ToolTip": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Controllers\\MovInventarioController.cs",
+              "RelativeToolTip": "MovInventario.Web\\Controllers\\MovInventarioController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwv0wAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T02:04:48.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Program.cs",
+              "RelativeDocumentMoniker": "MovInventario.Web\\Program.cs",
+              "ToolTip": "D:\\Educacion\\Backend .Net Especializacion\\Prueba_tecnica\\App\\MovInventario\\MovInventario.Web\\Program.cs",
+              "RelativeToolTip": "MovInventario.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T02:02:51.333Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 341,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 92,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

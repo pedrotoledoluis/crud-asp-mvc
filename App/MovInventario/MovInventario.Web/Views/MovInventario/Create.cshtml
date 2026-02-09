@@ -1,0 +1,109 @@
+@model MovInventario.Application.Models.MovInventario
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Crear Movimiento";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Registrar Movimiento</h5>
+            </div>
+
+            <div class="card-body">
+                <form asp-action="Create">
+
+                    <!-- Fila 1 -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Cod. Compañía</label>
+                            <select asp-for="CodCia" asp-items="@ViewBag.Companias" class="form-select">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="CodCia" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Compañía Venta</label>
+                            <select asp-for="CompaniaVenta3" asp-items="@ViewBag.CompaniasVenta" class="form-select">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="CompaniaVenta3" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Fila 2 -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Almacén Venta</label>
+                            <select asp-for="AlmacenVenta" asp-items="@ViewBag.Almacenes" class="form-select">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="AlmacenVenta" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Tipo Movimiento</label>
+                            <select asp-for="TipoMovimiento" asp-items="@ViewBag.TiposMovimiento" class="form-select">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="TipoMovimiento" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Fila 3 -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Tipo Documento</label>
+                            <select asp-for="TipoDocumento" asp-items="@ViewBag.TiposDocumento" class="form-select">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="TipoDocumento" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Nro Documento</label>
+                            <input asp-for="NroDocumento" class="form-control"
+                                   placeholder="Ej: 10000000" maxlength="8" />
+                            <span asp-validation-for="NroDocumento" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Fila 4 -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Cod. Item</label>
+                            <select asp-for="CodItem2" asp-items="@ViewBag.Items" class="form-select">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="CodItem2" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Cantidad</label>
+                            <input asp-for="Cantidad" type="number" min="1" class="form-control" />
+                            <span asp-validation-for="Cantidad" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Fila 5 -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Fecha Transacción</label>
+                            <input asp-for="FechaTransaccion" type="date" class="form-control" />
+                        </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="d-flex justify-content-end gap-2">
+                        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
